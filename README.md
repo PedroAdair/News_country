@@ -7,6 +7,7 @@ Se abarcan multiples herramientas de NLP, reducción de dimensión y clasificado
 Train/val set de 2,250 noticias y 1000 para el conjunto de test.
 
 Preprocesamiento: Se hace uso de la libreria NLTK para realizar las siguientes acciones:
+  * Todas las noticias a 100 palabras (esto afecta en la precisioón del modelo, por cuestiones de hardware no se puede realizar con toda la longitud.)
   * remove all the special characters
   * remove all single characters
   * Remove single characters from the start
@@ -16,7 +17,7 @@ Preprocesamiento: Se hace uso de la libreria NLTK para realizar las siguientes a
   * Converting to Lowercase
 
 Modelos pre-entrenados
-  * Distle BETO
+  * Distle BETO: una versión es con los pesos congelados (reducir el coste computacional) y otra con todas las 
 
 Representaciones en baja dimesión:
   * PCA
@@ -30,3 +31,5 @@ Ajuste de clasificadores:
       *lineal
       * rbf
   * RandomForestClassifier
+
+OBS: Se realizo con una MV de Coogle Colab Pro en la versión de RAM ampliada y con GPU disponible
